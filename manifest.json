@@ -1,0 +1,10 @@
+{
+    "background_color": "#ffffff",
+    "theme_color": "#7E1F86",
+    "name": "Svelte Quran",
+    "short_name": "Svelte Quran",
+    "start_url": "/",
+    "display": "standalone",
+    "icons": [
+    ]
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri Quran");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
+
+
+
+:root {
+	font-family: Amiri Quran, Inter, Avenir, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	
+	/* font-weight: 400; */
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	scroll-behavior: smooth;
+	/* background-color: #242424; */
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	display: block;
+	min-width: 280px;
+	min-height: 100vh;
+	padding-top: 70px;
+	background-color: #f1f5f9 !important;
+	transition: all 0.3s ease !important;
+	/* align-items: center; */
+}
+
+body.dark-mode {
+	transition: all 0.3s ease !important;
+	background-color: #0f172a !important;
+	color: #bfc2c7;
+}
+
+body.dark-mode .form-input {
+	background-color: #1e293b;
+	color: #bfc2c7;
+	transition: all 0.3s ease !important;
+}
+
+body.dark-mode .form-control {
+	box-shadow: none !important;
+	transition: all 0.3s ease !important;
+}
+
+body.dark-mode .form-control:focus {
+	box-shadow: rgba(100, 100, 111, 0.2) 7px 7px 19px 6px !important;
+	transition: all 0.3s ease !important;
+}
+body.dark-mode .navbar {
+	background-color: #1e293b !important;
+	transition: all 0.3s ease !important;
+	color: #bfc2c7;
+}
+
+body.dark-mode .card {
+	background-color: #1e293b !important;
+	color: #bfc2c7 !important;
+	transition: all 0.3s ease !important;
+}
+
+body.dark-mode .back-to-top {
+	color: white !important;
+}
+
+body.dark-mode .ayat-card {
+	background-color: #0F172A !important;
+	color: #bfc2c7 !important;
+	transition: all 0.3s ease !important;
+	border-bottom: 1px solid #6c7688 !important;
+}
+
+body.dark-mode .sidebar {
+	background-color: #1e293b !important;
+	color: #bfc2c7 !important;
+	transition: all 0.3s ease !important;
+}
+
+.app-container {
+	align-items: center;
+}
+
+.card-container {
+	margin: 40px 25px;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+	.card-container {
+		margin: 40px 100px;
+	}
+}
