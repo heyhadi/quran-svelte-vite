@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { VitePWA } from 'vite-plugin-pwa'
+import { resolve } from 'path'
 
 
 const pwaManifest = {
@@ -27,5 +28,13 @@ export default defineConfig({
   plugins: [svelte(),  VitePWA({
     manifest: pwaManifest,
     includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png', 'assets/*'],
-  }),]
+  }),],
+  publicDir: "src/static",
+  resolve: {
+    alias: {
+      $lib: resolve('./src/lib'),
+      $components: resolve('./src/components'),
+      $static: resolve('./src/static'),
+    }
+  }
 })
