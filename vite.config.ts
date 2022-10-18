@@ -8,7 +8,7 @@ const pwaManifest = {
     name: 'SVELTE QURAN',
     short_name: 'SVELTE QURAN Demo',
     description: 'Coolness in Vite Svelte',
-    theme_color: '#ffffff',
+    theme_color: '#0c50b6',
     icons: [
       {
         "src": "/android-chrome-192x192.png",
