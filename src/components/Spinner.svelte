@@ -25,7 +25,7 @@
         backdrop-filter: blur(6px);
 	}
 	.overlay-spinner {
-		position: absolute !important;
+		position: fixed !important;
 		left: 50%;
 		top: 50%;
 		transform: translate(-50%, -50%);

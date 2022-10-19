@@ -15,7 +15,9 @@
     
 </script>
 {#if surahId !== "1"}
+{#if !$queryResult.isFetching}
 <h1 class="text-center">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h1>
+{/if}
 {/if}
 <AyatCard queryResult = {$queryResult}/>
 <ScrollTop />
