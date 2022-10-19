@@ -74,7 +74,7 @@
 
 <style>
 	.navbar {
-		background-color: #0c50b6;
+		background-color: #1e293b;
 	}
 	.sidebar {
 		height: 100%;
@@ -84,7 +84,7 @@
 		top: 0;
 		left: 0;
 		margin-top: 20px;
-		background-color: #0c4cac;
+		background-color: #1e293b;
 		overflow-x: hidden;
 		transition: all 0.3s ease;
 		padding-top: 60px;
