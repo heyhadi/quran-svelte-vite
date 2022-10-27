@@ -29,6 +29,7 @@ body {
 	padding-top: 70px;
 	background-color: #f1f5f9 !important;
 	transition: all 0.3s ease !important;
+	scroll-behavior: smooth;
 	/* align-items: center; */
 }
 
