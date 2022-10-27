@@ -5,6 +5,7 @@
 	
 
 	const handleNavigate = (number:number, verseId: number) => {
+		window.analytics.track("test", {id: "testid"})
 		fromBookmark.set(true)
 		navigate(`/baca/${number}`)
 		idAyat.set(verseId)
