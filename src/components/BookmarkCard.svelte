@@ -2,10 +2,11 @@
 	import Spinner from "./Spinner.svelte";
 	import {  bookmarked, idAyat, fromBookmark} from "../store/store";
 	import { navigate } from "svelte-routing";
+	import {testSegment} from "../lib/segment"
 	
 
 	const handleNavigate = (number:number, verseId: number) => {
-		window.analytics.track("test", {id: "testid"})
+		testSegment({id: "testId"})
 		fromBookmark.set(true)
 		navigate(`/baca/${number}`)
 		idAyat.set(verseId)
