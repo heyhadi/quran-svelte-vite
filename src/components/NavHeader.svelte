@@ -56,7 +56,7 @@
 <aside
 	id="mySidebar"
 	class="sidebar"
-	style={isOpen ? "width: 350px;" : "width:0px;"}
+	style={isOpen ? "width: 370px;" : "width:0px;"}
 >
 	{#each menu as { name, path, icon }, idx}
 		<Link to={path} style="text-decoration: none;">
