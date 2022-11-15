@@ -147,6 +147,7 @@
 		background-color: #f1f5f9 !important;
 		border-bottom: 1px solid #a4b0c6 !important;
 		border-radius: 0px !important;
+		transition: all 0.3s ease !important;
 	}
 	h1 {
 		font-weight: bold !important;

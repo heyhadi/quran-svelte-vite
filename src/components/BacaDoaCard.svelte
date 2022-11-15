@@ -35,12 +35,6 @@
 
 
 <style>
-	:global(.ayat-card) {
-		border: none !important;
-		background-color: #f1f5f9 !important;
-		border-bottom: 1px solid #a4b0c6 !important;
-		border-radius: 0px !important;
-	}
 	h1 {
 		font-weight: bold !important;
 		font-size: 30px;

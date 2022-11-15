@@ -56,7 +56,7 @@
 <aside
 	id="mySidebar"
 	class="sidebar"
-	style={isOpen ? "width: 400px;" : "width:0px;"}
+	style={isOpen ? "width: 350px;" : "width:0px;"}
 >
 	{#each menu as { name, path, icon }, idx}
 		<Link to={path} style="text-decoration: none;">
@@ -88,11 +88,11 @@
 		overflow-x: hidden;
 		transition: all 0.3s ease;
 		padding-top: 60px;
-		border-top: 1px solid black;
+		/* border-top: 1px solid black; */
 	}
 
 	.sidebar span {
-		padding: 15px 8px 28px 0px;
+		padding: 25px 30px 28px 10px;
 		text-decoration: none;
 		font-size: 20px;
 		color: #ffffff;
@@ -100,7 +100,7 @@
 		transition: all 0.3s ease;
 		border-bottom: 2px solid #d9e1f3;
 		margin-left: 18px;
-		margin-right: 20px;
+		margin-right: 40px;
 		cursor: pointer;
 		white-space: nowrap;
 		/* text-overflow: ellipsis; */
