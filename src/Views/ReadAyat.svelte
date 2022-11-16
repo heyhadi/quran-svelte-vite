@@ -11,6 +11,8 @@
 		);
 	});
 
+	window.analytics.track("testSegment", {"name":"Hadi"})
+
 	// $: console.log($queryResult);
 </script>
 
