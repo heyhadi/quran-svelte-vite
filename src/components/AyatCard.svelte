@@ -83,7 +83,7 @@
 	};
 </script>
 
-{#if queryResult.isLoading || queryResult.isFetching}
+{#if queryResult.isLoading}
 	<Spinner />
 {:else if queryResult.error}
 	An error has occurred:
