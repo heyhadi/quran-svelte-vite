@@ -92,8 +92,8 @@
 	{#each queryResult.data.ayahs as { audio, ayahText, readText, verseId, indoText, juz }}
 		<Card body class="ayat-card">
 			<Row>
-				<Col xs={12} class="d-flex justify-content-end mt-3">
-					<h1 id={verseId + 1}>{ayahText}</h1>
+				<Col xs={12} class="d-flex justify-content-end mt-3 ">
+					<h1 class = "lh-lg" id={verseId + 1}>{ayahText}</h1>
 				</Col>
 			</Row>
 			<Row>
