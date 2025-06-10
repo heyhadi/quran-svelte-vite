@@ -1,48 +1,287 @@
-# Svelte + TS + Vite
+<p align="center">
+    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="center" width="30%">
+</p>
+<p align="center"><h1 align="center">QURAN-SVELTE-VITE</h1></p>
+<p align="center">
+	<img src="https://img.shields.io/github/license/heyhadi/quran-svelte-vite?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/heyhadi/quran-svelte-vite?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/heyhadi/quran-svelte-vite?style=default&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/heyhadi/quran-svelte-vite?style=default&color=0080ff" alt="repo-language-count">
+</p>
+<p align="center"><!-- default option, no dependency badges. -->
+</p>
+<p align="center">
+	<!-- default option, no dependency badges. -->
+</p>
+<br>
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+##  Table of Contents
 
-## Recommended IDE Setup
+- [ Overview](#-overview)
+- [ Features](#-features)
+- [ Project Structure](#-project-structure)
+  - [ Project Index](#-project-index)
+- [ Getting Started](#-getting-started)
+  - [ Prerequisites](#-prerequisites)
+  - [ Installation](#-installation)
+  - [ Usage](#-usage)
+  - [ Testing](#-testing)
+- [ Project Roadmap](#-project-roadmap)
+- [ Contributing](#-contributing)
+- [ License](#-license)
+- [ Acknowledgments](#-acknowledgments)
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+---
 
-## Need an official Svelte framework?
+##  Project Structure
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
-
-## Technical considerations
-
-**Why use this over SvelteKit?**
-
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-  `vite dev` and `vite build` wouldn't work in a SvelteKit environment, for example.
-
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
-
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
-
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
-
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
-
-**Why include `.vscode/extensions.json`?**
-
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
-
-**Why enable `allowJs` in the TS template?**
-
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+```sh
+└── quran-svelte-vite/
+    ├── README.md
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── public
+    │   ├── offline.html
+    │   └── vite.svg
+    ├── src
+    │   ├── App.svelte
+    │   ├── Layout
+    │   ├── Views
+    │   ├── app.css
+    │   ├── components
+    │   ├── config
+    │   ├── lib
+    │   ├── main.ts
+    │   ├── offline.html
+    │   ├── static
+    │   ├── store
+    │   └── vite-env.d.ts
+    ├── svelte.config.js
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    └── vite.config.ts
 ```
+
+
+###  Project Index
+<details open>
+	<summary><b><code>QURAN-SVELTE-VITE/</code></b></summary>
+	<details> <!-- __root__ Submodule -->
+		<summary><b>__root__</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/tsconfig.node.json'>tsconfig.node.json</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/package-lock.json'>package-lock.json</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/tsconfig.json'>tsconfig.json</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/package.json'>package.json</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/vite.config.ts'>vite.config.ts</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/index.html'>index.html</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/svelte.config.js'>svelte.config.js</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+		</blockquote>
+	</details>
+	<details> <!-- src Submodule -->
+		<summary><b>src</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/offline.html'>offline.html</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/main.ts'>main.ts</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/app.css'>app.css</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/vite-env.d.ts'>vite-env.d.ts</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/App.svelte'>App.svelte</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+			<details>
+				<summary><b>lib</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/lib/segment.ts'>segment.ts</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/lib/pwa.ts'>pwa.ts</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>config</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/config/routes.ts'>routes.ts</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>components</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/components/ScrollTop.svelte'>ScrollTop.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/components/NavHeader.svelte'>NavHeader.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/components/SearchBar.svelte'>SearchBar.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/components/Spinner.svelte'>Spinner.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/components/BookmarkCard.svelte'>BookmarkCard.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/components/AyatCard.svelte'>AyatCard.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/components/DoaCard.svelte'>DoaCard.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/components/BacaDoaCard.svelte'>BacaDoaCard.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/components/SurahCard.svelte'>SurahCard.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>store</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/store/store.ts'>store.ts</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>Views</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/Views/Quran.svelte'>Quran.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/Views/ReadAyat.svelte'>ReadAyat.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/Views/DoaHarian.svelte'>DoaHarian.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/Views/Bookmark.svelte'>Bookmark.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+			<details>
+				<summary><b>Layout</b></summary>
+				<blockquote>
+					<table>
+					<tr>
+						<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/src/Layout/Layout.svelte'>Layout.svelte</a></b></td>
+						<td><code>❯ REPLACE-ME</code></td>
+					</tr>
+					</table>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
+	<details> <!-- public Submodule -->
+		<summary><b>public</b></summary>
+		<blockquote>
+			<table>
+			<tr>
+				<td><b><a href='https://github.com/heyhadi/quran-svelte-vite/blob/master/public/offline.html'>offline.html</a></b></td>
+				<td><code>❯ REPLACE-ME</code></td>
+			</tr>
+			</table>
+		</blockquote>
+	</details>
+</details>
+
+---
+##  Getting Started
+
+###  Prerequisites
+
+Before getting started with quran-svelte-vite, ensure your runtime environment meets the following requirements:
+
+- **Programming Language:** Svelte
+- **Package Manager:** Npm
+
+
+###  Installation
+
+Install quran-svelte-vite using one of the following methods:
+
+**Build from source:**
+
+1. Clone the quran-svelte-vite repository:
+```sh
+❯ git clone https://github.com/heyhadi/quran-svelte-vite
+```
+
+2. Navigate to the project directory:
+```sh
+❯ cd quran-svelte-vite
+```
+
+3. Install the project dependencies:
+
